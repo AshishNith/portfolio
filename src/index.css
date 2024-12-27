@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+#HomePage{
+  background-image: url(src/assets/background.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+}
+
+#HomePageName{
+  -webkit-text-stroke:2px rgb(255, 255, 255,0.7);
+}
+
+
+
+/* Animated Spheres */
+.sphere {
+  @apply absolute rounded-full blur-3xl;
+  background: radial-gradient(circle at 30% 30%, rgba(79, 70, 229, 0.7), rgba(129, 140, 248, 0.3));
+  pointer-events: none;
+}
+
+.sphere-1 {
+  width: 500px;
+  height: 500px;
+  top: -100px;
+  right: -50px;
+  animation: float1 25s ease-in-out infinite;
+  opacity: 0.4;
+}
+
+.sphere-2 {
+  width: 400px;
+  height: 400px;
+  bottom: -100px;
+  left: -50px;
+  animation: float2 28s ease-in-out infinite;
+  opacity: 0.3;
+  background: radial-gradient(circle at 30% 30%, rgba(236, 72, 153, 0.7), rgba(244, 114, 182, 0.3));
+}
+
+.sphere-3 {
+  width: 300px;
+  height: 300px;
+  top: 40%;
+  left: 25%;
+  animation: float3 30s ease-in-out infinite;
+  opacity: 0.25;
+  background: radial-gradient(circle at 30% 30%, rgba(99, 102, 241, 0.7), rgba(165, 180, 252, 0.3));
+}
+
+.sphere-4 {
+  width: 250px;
+  height: 250px;
+  top: 15%;
+  left: 15%;
+  animation: float4 32s ease-in-out infinite;
+  opacity: 0.2;
+  background: radial-gradient(circle at 30% 30%, rgba(168, 85, 247, 0.7), rgba(192, 132, 252, 0.3));
+}
+
+.sphere-5 {
+  width: 350px;
+  height: 350px;
+  bottom: 15%;
+  right: 15%;
+  animation: float5 35s ease-in-out infinite;
+  opacity: 0.35;
+  background: radial-gradient(circle at 30% 30%, rgba(244, 63, 94, 0.7), rgba(251, 113, 133, 0.3));
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(40px, 40px) scale(1.1); }
+  50% { transform: translate(0, 80px) scale(1); }
+  75% { transform: translate(-40px, 40px) scale(0.9); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(-40px, -40px) scale(0.9); }
+  50% { transform: translate(-80px, 0) scale(1.1); }
+  75% { transform: translate(-40px, 40px) scale(1); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  50% { transform: translate(30px, -30px) scale(1.1) rotate(180deg); }
+}
+
+@keyframes float4 {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  50% { transform: translate(-30px, 30px) scale(0.9) rotate(-180deg); }
+}
+
+@keyframes float5 {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  50% { transform: translate(30px, 30px) scale(1.1) rotate(180deg); }
+}
+
+/* Add these new styles */
+.glass {
+  @apply backdrop-blur-lg bg-white/5 border border-white/10;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03));
+}
+  
+.glass-dark {
+  @apply backdrop-blur-lg bg-black/20 border border-white/5;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Add this if you want to hide the scrollbar but keep functionality */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+
+
+/* Ensure elements don't interfere with the cursor */
+button, a, input, textarea {
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  * {
+    cursor: auto !important;
+  }
+  
+  .pointer-events-none {
+    display: none !important;
+  }
+}
+
+/* Add these styles for smooth project card animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card-enter {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Optional: Add hover effect for project cards */
+.group:hover .project-image {
+  transform: scale(1.1);
+}
+
+/* Add or update these z-index classes */
+.z-layers {
+  /* Background */
+  --z-background: 0;
+  /* Shapes */
+  --z-shapes: 1;
+  /* Content */
+  --z-content: 20;
+  /* Navbar */
+  --z-navbar: 50;
+  /* Chat */
+  --z-chat: 100;
+  /* Modal */
+  --z-modal-backdrop: 999;
+  --z-modal: 1000;
+  /* Cursor */
+  --z-cursor-trail: 9998;
+  --z-cursor: 9999;
+}
+
+/* Add these new animations */
+@keyframes blob {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out forwards;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Add this to your existing animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+/* Make sure the chat components are visible */
+.fixed {
+  position: fixed;
+}
+
+/* Ensure proper stacking context */
+#root {
+  isolation: isolate;
+}
+
+/* Rotating Text Animation */
+.rotating-text-container {
+  animation: spin 12s linear infinite;
+  fill: white;
+  opacity: 0.7;
+}
+
+.rotating-text {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Optional: Stop animation on hover */
+.rotating-text-container:hover {
+  animation-play-state: paused;
+}
