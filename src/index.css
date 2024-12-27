@@ -17,7 +17,7 @@ html{
 }
 
 #HomePage{
-  background-image: url(src/assets/background.webp);
+  background-image: url(../src/assets/background.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
