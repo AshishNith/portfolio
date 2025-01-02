@@ -32,9 +32,9 @@ const Skills = () => {
       icon: "ri-robot-line",
       color: "from-green-500 to-green-700",
       items: [
-        { name: "ROS2", icon: <i className="ri-robot-fill"></i>, level: 88, description: "Robotics programming", link: "/projects" },
+        { name: "ROS2", icon: <i className="ri-robot-fill"></i>, level: 30, description: "Robotics programming", link: "/projects" },
         { name: "LangChain", icon: <i className="ri-brain-fill"></i>, level: 80, description: "AI chatbots", link: "/projects" },
-        { name: "OpenCV", icon: <i className="ri-eye-fill"></i>, level: 85, description: "Computer vision", link: "/projects" }
+        { name: "OpenCV", icon: <i className="ri-eye-fill"></i>, level: 40, description: "Computer vision", link: "/projects" }
       ]
     }
   ]
@@ -84,6 +84,7 @@ const Skills = () => {
               <i className="ri-folder-line text-4xl mb-4 block"></i>
               <span className="text-lg font-bold">View Related Projects</span>
             </Link>
+            <p className="text-white/60 mt-2">Explore projects related to {skill.name}</p>
           </div>
         </div>
       </div>
@@ -108,19 +109,19 @@ const Skills = () => {
         </motion.div>
 
         {/* Category Navigation */}
-        <div className="flex justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
           {techStacks.map((stack) => (
             <button
               key={stack.category}
               onClick={() => setActiveCategory(stack.category)}
-              className={`px-6 py-3 rounded-xl flex items-center gap-2 transition-all duration-300 ${
+              className={`px-4 py-2 rounded-lg flex items-center gap-1 transition-all duration-300 text-sm sm:text-base ${
                 activeCategory === stack.category
                   ? 'bg-primary text-white'
                   : 'glass-dark text-white/60 hover:text-white'
               }`}
             >
               <i className={stack.icon}></i>
-              {stack.category}
+              <span className="hidden sm:inline">{stack.category}</span>
             </button>
           ))}
         </div>

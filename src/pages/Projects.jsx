@@ -25,18 +25,18 @@ const Projects = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <h1 className="text-6xl font-bold mb-6">
+            <h1 className="lg:text-6xl text-4xl font-bold mb-3">
               <span className="bg-gradient-to-r from-primary via-primary-light to-primary bg-clip-text text-transparent">
                 Featured Projects
               </span>
             </h1>
-            <p className="text-lg text-white/60 max-w-2xl mx-auto">
+            <p className="lg:text-lg text-white/60 max-w-2xl mx-auto">
               Explore my journey through code, from web applications to robotics projects
             </p>
           </motion.div>
 
           {/* Filter Section */}
-          <div className="flex justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
             {categories.map((category, index) => (
               <motion.button
                 key={category}
@@ -44,7 +44,7 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-2 rounded-full backdrop-blur-md transition-all duration-300 flex items-center gap-2
+                className={`px-4 py-2 rounded-full backdrop-blur-md transition-all duration-300 flex items-center gap-2
                   ${selectedCategory === category 
                     ? 'bg-primary/20 text-primary border border-primary/50' 
                     : 'bg-white/5 text-white/60 border border-white/10 hover:bg-white/10'

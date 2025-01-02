@@ -17,13 +17,20 @@ const Hero = () => {
            <div id='HomePage' className='w-screen h-screen relative border-b-2 border-gray-700'>
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10"></div>
         <div className="relative z-20 w-full h-full flex flex-col items-center justify-center bg-black/80">
-          <h1 id='HomePageName' className='text-[200px] text-white/10 font-sans font-bold'>
+          <h1 id='HomePageName' className='text-center lg:text-[200px] text-[100px] text-white/10 font-sans font-bold leading-[20vw]'>
             Ashish Ranjan
           </h1>
-          <pre className='text-4xl text-white/80 font-sans font-bold tracking-wider mt-4'>
+          <pre className='hidden lg:block text-4xl text-white/80 font-sans font-bold tracking-wider mt-4'>
             Robotics Engineer  |  Web Developer  |  AI/ML Enthusiast
           </pre>
-          <div className="mt-12 flex gap-6">
+          <div className='block lg:hidden text-white text-center p-6 bg-black/70 rounded-lg shadow-lg'>
+            <div className='border-t-2 border-white opacity-30 w-1/2 mx-auto my-4'></div>
+            <h2 className='text-xl font-bold mb-2'>Robotics Engineer</h2>
+            <h2 className='text-xl font-bold mb-2'>Web Developer</h2>
+            <h2 className='text-xl font-bold mb-2'>AI/ML Enthusiast</h2>
+            <div className='border-t-2 border-white opacity-30 w-1/2 mx-auto my-4'></div>
+          </div>
+          <div className="lg:mt-12 mt-0 flex gap-6">
             {socialLinks.map((link, index) => (
               <a
                 key={index}

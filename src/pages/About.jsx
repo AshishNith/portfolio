@@ -117,7 +117,7 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 key={index} 
-                className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 mb-12`}
+                className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'gap-8' : 'gap-8 md:flex-row-reverse'} mb-12`}
               >
                 <div className="md:w-1/2" />
                 <div className="relative md:w-1/2 bg-black/40 backdrop-blur-xl rounded-2xl p-8 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2">
