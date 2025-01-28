@@ -19,7 +19,7 @@ const App = () => {
         <Navbar />
       <FloatingShape />
 
-        {/* <MouseFollower /> */}
+        <MouseFollower />
         <ChatBot />
         <main className="flex-grow">
           <Routes>
