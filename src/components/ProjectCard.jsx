@@ -27,13 +27,13 @@ const ProjectCard = ({ project }) => {
   return (
     <>
       <div 
-        className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer"
+        className="group bg-white/50 relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer"
         onClick={() => setShowModal(true)}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Background Image */}
-        <div className="absolute inset-0">
+        <div className="absolute  inset-0">
           <img 
             src={project.image} 
             alt={project.title}

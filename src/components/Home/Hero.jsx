@@ -15,6 +15,7 @@ const Hero = () => {
 
   return (
            <div id='HomePage' className='w-screen h-screen relative border-b-2 border-gray-700'>
+            
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10"></div>
         <div className="relative z-20 w-full h-full flex flex-col items-center justify-center bg-black/80">
           <h1 id='HomePageName' className='text-center lg:text-[200px] text-[100px] text-white/10 font-sans font-bold leading-[20vw]'>

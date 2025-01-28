@@ -73,16 +73,39 @@ export const socialLinks = [
 ];
 export const projects = [
   {
-    title: "Autonomous Mobile Robot",
-    description: "Developed an autonomous mobile robot using ROS2 and Python. Implemented SLAM for mapping and navigation, computer vision for object detection, and path planning algorithms. The robot can navigate through complex environments while avoiding obstacles and performing various tasks.",
-    category: "Robotics",
-    technologies: ["ROS2", "Python", "OpenCV", "Navigation2", "SLAM", "Path Planning"],
-    github: "https://github.com/ashishnith/Autonomous-Mobile-Robot",
-    demo: "https://your-demo-link.com",
-    image: "https://images.pexels.com/photos/2085832/pexels-photo-2085832.jpeg",
+    title: "Roboweek 3.0 Website",
+    description: "Developed the official website for Roboweek 3.0, a robotics event at NIT Hamirpur, using React and modern web technologies. The website features event information, registration, and team details.",
+    category: "Web",
+    technologies: ["React", "Tailwind CSS", "JavaScript", "Responsive Design", "Git"],
+    github: "https://github.com/AshishNith/Roboweek-3.0---Frontend",
+    demo: "https://roboweek3.vercel.app/",
+    image: "src/assets/Skills/Roboweek.png",
     status: "Completed",
-    duration: "6 months",
-    teamSize: 4
+    duration: "1 month",
+    teamSize: 2
+  },
+  {
+    title: "Robotics Society Website",
+    description: "Developed the official website for RoboSoc NIT Hamirpur, the robotics society of NIT Hamirpur, using React and modern web technologies. The website showcases society activities, events, and member information.",
+    category: "Web",
+    technologies: ["React", "Markdown", "Tailwind CSS", "Responsive Design", "Git"],
+    github: "https://github.com/AshishNith/RoboticsReactApp",
+    demo: "https://robotics-docs.vercel.app/",
+    image: "src/assets/Robosoc.png",
+    status: "Completed",
+    duration: "2 weeks",
+    teamSize: 1
+  }, {
+    title: "Portfolio Website",
+    description: "Developed my personal portfolio website to showcase my skills, projects, and achievements. Built using React and modern web technologies with a focus on clean design and smooth animations.",
+    category: "Web",
+    technologies: ["React", "Tailwind CSS", "Framer Motion", "Responsive Design", "Git"],
+    github: "https://github.com/AshishNith/portfolio",
+    demo: "https://ashishnith.vercel.app/",
+    image: "src/assets/Portfolio.png",
+    status: "Completed",
+    duration: "1 month",
+    teamSize: 1
   },
   {
     title: "Gesture Controlled Robot",
@@ -91,7 +114,7 @@ export const projects = [
     technologies: ["Arduino", "Python", "OpenCV", "Wireless Communication"],
     github: "https://github.com/ashishnith/Gesture-Controlled-Robot",
     demo: "https://gesture-bot-demo.com",
-    image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
+    image: "src/assets/Gesture.jpeg",
     status: "Completed",
     duration: "3 months",
     teamSize: 3
@@ -110,10 +133,10 @@ export const projects = [
   },
   {
     title: "Joystick to Turtle Control",
-    description: "Developed a ROS2-based project to control a TurtleSim simulation using a physical joystick, enhancing user interaction with robotic simulations.",
+    description: "Developed a ROS2-based project to control TurtleSim using a physical joystick, implementing a custom ROS2 node for joystick input processing and turtle movement control. The project demonstrates real-time teleoperation and simulation control in robotics.",
     category: "Robotics",
-    technologies: ["ROS2", "Python", "Joystick Integration"],
-    github: "https://github.com/ashishnith/Joystick_to_Turtle_control",
+    technologies: ["ROS2 Humble", "Python", "Joystick Integration", "TurtleSim", "Teleoperation"],
+    github: "https://github.com/AshishNith/Joystick_to_Turtle_control",
     demo: "",
     image: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
     status: "Completed",

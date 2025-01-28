@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ProjectCard from '../components/ProjectCard'
 import { motion } from 'framer-motion'
 import { projects } from '../data/data'
-import FloatingShape from '../components/FloatingShape'
+// import FloatingShape from '../components/FloatingShape'
 import { FaFilter } from 'react-icons/fa'
 
 const Projects = () => {
@@ -15,8 +15,8 @@ const Projects = () => {
 
   return (
     <>
-      <FloatingShape />
-      <section className="min-h-screen relative pt-24 pb-16">
+      {/* <FloatingShape /> */}
+      <section className="bg-white/10  min-h-screen relative pt-24 pb-16">
         {/* Header Section */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
