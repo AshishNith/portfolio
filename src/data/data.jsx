@@ -1,25 +1,4 @@
 import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from 'react-icons/fa6'
-
-// export const featuredProjects = [
-//     {
-//       title: "Autonomous Mobile Robot",
-//       description: "ROS2-based autonomous navigation system with SLAM and computer vision capabilities.",
-//       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3",
-//       tags: ["ROS2", "Python", "Navigation"],
-//     },
-//     {
-//       title: "Portfolio Website",
-//       description: "Modern portfolio with React, featuring smooth animations and glassmorphism design.",
-//       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3",
-//       tags: ["React", "Tailwind", "JavaScript"],
-//     },
-//     {
-//       title: "ML Weather Prediction",
-//       description: "Machine learning model to predict weather patterns using historical data.",
-//       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3",
-//       tags: ["Python", "TensorFlow", "ML"],
-//     },
-// ]
   
 export const experiences = [
   {
@@ -78,11 +57,23 @@ export const projects = [
     category: "Web",
     technologies: ["React", "Tailwind CSS", "JavaScript", "Responsive Design", "Git"],
     github: "https://github.com/AshishNith/Roboweek-3.0---Frontend",
-    demo: "https://roboweek3.vercel.app/",
+    demo: "https://roboweek3.com/",
     image: "src/assets/Skills/Roboweek.png",
-    status: "Completed",
+    status: "In Progress",
     duration: "1 month",
     teamSize: 2
+  },
+  {
+    title: "The Sapphire Retreat",
+    description: "Developed a full-stack hotel booking platform with advanced search and filtering capabilities. The platform features user authentication, room management, and booking system with payment integration.",
+    category: "Web",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "REST API"],
+    github: "https://github.com/AshishNith/The-Sapphire-Retreat",
+    demo: "https://the-sapphire-retreat.vercel.app/",
+    image: "src/assets/Hotel.png",
+    status: "In Progress",
+    duration: "-- -- --",
+    teamSize: 3
   },
   {
     title: "Robotics Society Website",
@@ -90,9 +81,9 @@ export const projects = [
     category: "Web",
     technologies: ["React", "Markdown", "Tailwind CSS", "Responsive Design", "Git"],
     github: "https://github.com/AshishNith/RoboticsReactApp",
-    demo: "https://robotics-docs.vercel.app/",
+    demo: "https://robosoc-nith.vercel.app/",
     image: "src/assets/Robosoc.png",
-    status: "Completed",
+    status: "In Progress",
     duration: "2 weeks",
     teamSize: 1
   }, {
@@ -138,7 +129,8 @@ export const projects = [
     technologies: ["ROS2 Humble", "Python", "Joystick Integration", "TurtleSim", "Teleoperation"],
     github: "https://github.com/AshishNith/Joystick_to_Turtle_control",
     demo: "",
-    image: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+        image: "src/assets/Turtle.png",
+
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -150,55 +142,45 @@ export const projects = [
     technologies: ["ROS2", "Python", "Path Planning"],
     github: "https://github.com/ashishnith/Turtle_Follow",
     demo: "",
-    image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg",
+            image: "src/assets/Turtle.png",
+
     status: "Completed",
     duration: "1 month",
     teamSize: 1
   },
   {
-    title: "Robotics Documentation Website",
-    description: "Developed a comprehensive documentation website for robotics projects, providing resources, tutorials, and guides for enthusiasts and developers.",
+    title: "Ranjan's Documentation Website",
+    description: "Developed a comprehensive documentation website for Ranjan's projects and research, featuring organized content, search functionality, and responsive design.",
     category: "Web",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/ashishnith/Robotics-Documentation-Website",
-    demo: "https://ashishnith.github.io/Robotics-Documentation-Website/",
-    image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg",
+    technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    github: "https://github.com/AshishNith/Ranjan-s_Docs",
+    demo: "https://ashishnith.github.io/Ranjan-s_Docs/",
+            image: "src/assets/Docs.png",
     status: "Completed",
     duration: "2 months",
     teamSize: 1
   },
   {
     title: "Boston Dynamics UI Clone",
-    description: "Created a user interface clone of the Boston Dynamics website to practice and showcase front-end development skills.",
+    description: "Developed a responsive UI clone of Boston Dynamics' official website using modern web technologies. The project focuses on replicating the sleek design and smooth animations of the original site while implementing custom features.",
     category: "Web",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/ashishnith/Boston-Dynamics-UI-Clone",
-    demo: "https://ashishnith.github.io/Boston-Dynamics-UI-Clone/",
-    image: "https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "CSS Animations"],
+    github: "https://github.com/AshishNith/Boston-Dynamics_UI-clone",
+    demo: "https://ashishnith.github.io/Boston-Dynamics_UI-clone/",
+            image: "src/assets/Boston.png",
+
     status: "Completed",
     duration: "1 month",
     teamSize: 1
   },
   {
-    title: "Portfolio Website",
-    description: "A modern, responsive portfolio website built with HTML, CSS, and JavaScript. Features smooth animations, dynamic content loading, and interactive elements.",
-    category: "Web",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/ashishnith/MyWebsite",
-    demo: "https://ashishnith.github.io/MyWebsite/",
-    image: "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg",
-    status: "Completed",
-    duration: "2 months",
-    teamSize: 1
-  },
-  {
     title: "Task Manager Using Flask",
-    description: "Developed a task management application using Flask, allowing users to create, update, and delete tasks with a user-friendly interface.",
+    description: "Developed a robust task management application using Django framework, featuring user authentication, CRUD operations, and a responsive interface for efficient task management.",
     category: "Web",
-    technologies: ["Flask", "Python", "SQLite"],
-    github: "https://github.com/ashishnith/Task-Manager-Using-Flask",
+    technologies: ["Django", "Python", "PostgreSQL", "Bootstrap", "Authentication"],
+    github: "https://github.com/AshishNith/TaskManager--Django",
     demo: "",
-    image: "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg",
+            image: "src/assets/Task.png",
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -210,7 +192,7 @@ export const projects = [
     technologies: ["Arduino", "C++", "Sensors"],
     github: "https://github.com/ashishnith/Line-Follower-Bot",
     demo: "",
-    image: "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg",
+            image: "src/assets/Line.jpeg",
     status: "Completed",
     duration: "2 months",
     teamSize: 2
@@ -229,13 +211,28 @@ export const projects = [
   },
   {
     title: "Drone Flight Controller",
-    description: "Created a custom flight controller for a quadcopter drone using Arduino and IMU sensors. Implemented PID control algorithms for stable flight and autonomous hovering capabilities.",
+    description: "Created a custom flight controller for a quadcopter drone using Arduino and MPU sensors. Implemented PID control algorithms for stable flight and autonomous hovering capabilities.",
     category: "Robotics",
     technologies: ["Arduino", "C++", "PID Control", "Sensors", "IMU"],
     github: "https://github.com/ashishnith/Drone-Flight-Controller",
-    demo: "",
-    image: "https://images.pexels.com/photos/2050718/pexels-photo-2050718.jpeg",
+    demo: "https://docs.google.com/document/d/1JEvM-cBXsihdNlWLUmdRNljJgKbOO4f0CUudsRtk4ak/edit?usp=sharing",
+            image: "src/assets/Drone.png",
     status: "Completed",
     duration: "5 months",
     teamSize: 3
-  } ]
+  },
+  {
+    title: "JavaScript Projects Collection",
+    description: "A curated collection of JavaScript projects showcasing various concepts and techniques, including DOM manipulation, API integration, and interactive web applications.",
+    category: "Web",
+    technologies: ["JavaScript", "HTML", "CSS", "DOM Manipulation", "API Integration"],
+    github: "https://github.com/AshishNith/JS_Projects",
+    demo: "",
+            image: "src/assets/js.png",
+    status: "Completed",
+    duration: "3 months",
+    teamSize: 1
+  },
+
+
+]

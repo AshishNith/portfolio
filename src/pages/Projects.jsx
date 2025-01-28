@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <>
       {/* <FloatingShape /> */}
-      <section className="bg-white/10  min-h-screen relative pt-24 pb-16">
+      <section className="  min-h-screen relative pt-24 pb-16">
         {/* Header Section */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

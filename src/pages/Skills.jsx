@@ -22,9 +22,31 @@ const Skills = () => {
       color: "from-purple-500 to-purple-700",
       items: [
         { name: "React", icon: <i className="ri-reactjs-fill"></i>, level: 85, description: "Dynamic UI components", link: "/projects" },
+        { name: "Next.js", icon: <i className="ri-nextjs-fill"></i>, level: 80, description: "Server-side rendering", link: "/projects" },
         { name: "Tailwind CSS", icon: <i className="ri-code-box-fill"></i>, level: 90, description: "Modern styling", link: "/projects" },
         { name: "GSAP", icon: <i className="ri-animation-fill"></i>, level: 75, description: "Advanced animations", link: "/projects" },
         { name: "Three.js", icon: <i className="ri-cube-line"></i>, level: 70, description: "3D visuals", link: "/projects" }
+      ]
+    },
+    {
+      category: "Backend Development",
+      icon: "ri-server-line",
+      color: "from-orange-500 to-orange-700",
+      items: [
+        { name: "Django", icon: <i className="ri-django-fill"></i>, level: 85, description: "Python web framework", link: "/projects" },
+        { name: "Flask", icon: <i className="ri-flask-fill"></i>, level: 80, description: "Micro web framework", link: "/projects" },
+        { name: "Express.js", icon: <i className="ri-nodejs-fill"></i>, level: 75, description: "Node.js framework", link: "/projects" },
+        { name: "Node.js", icon: <i className="ri-nodejs-fill"></i>, level: 80, description: "JavaScript runtime", link: "/projects" }
+      ]
+    },
+    {
+      category: "Data Science & Visualization",
+      icon: "ri-bar-chart-line",
+      color: "from-teal-500 to-teal-700",
+      items: [
+        { name: "Numpy", icon: <i className="ri-function-line"></i>, level: 85, description: "Numerical computing", link: "/projects" },
+        { name: "Pandas", icon: <i className="ri-table-line"></i>, level: 80, description: "Data manipulation and analysis", link: "/projects" },
+        { name: "Matplotlib", icon: <i className="ri-line-chart-line"></i>, level: 75, description: "Data visualization", link: "/projects" }
       ]
     },
     {
@@ -34,7 +56,27 @@ const Skills = () => {
       items: [
         { name: "ROS2", icon: <i className="ri-robot-fill"></i>, level: 30, description: "Robotics programming", link: "/projects" },
         { name: "LangChain", icon: <i className="ri-brain-fill"></i>, level: 80, description: "AI chatbots", link: "/projects" },
-        { name: "OpenCV", icon: <i className="ri-eye-fill"></i>, level: 40, description: "Computer vision", link: "/projects" }
+        { name: "OpenCV", icon: <i className="ri-eye-fill"></i>, level: 40, description: "Computer vision", link: "/projects" },
+        { name: "3D Printing", icon: <i className="ri-printer-line"></i>, level: 70, description: "Prototyping and manufacturing", link: "/projects" }
+      ]
+    },
+    {
+      category: "CAD & Design",
+      icon: "ri-draft-line",
+      color: "from-pink-500 to-pink-700",
+      items: [
+        { name: "Onshape", icon: <i className="ri-cube-line"></i>, level: 85, description: "Cloud-based CAD", link: "/projects" },
+        { name: "Fusion 360", icon: <i className="ri-cube-line"></i>, level: 80, description: "3D modeling and design", link: "/projects" }
+      ]
+    },
+    {
+      category: "Operating Systems",
+      icon: "ri-terminal-line",
+      color: "from-indigo-500 to-indigo-700",
+      items: [
+        { name: "Ubuntu", icon: <i className="ri-terminal-fill"></i>, level: 85, description: "System administration and shell scripting", link: "/projects" },
+        { name: "Windows", icon: <i className="ri-windows-fill"></i>, level: 90, description: "Desktop OS and administration", link: "/projects" },
+        { name: "Kali Linux", icon: <i className="ri-terminal-fill"></i>, level: 70, description: "Penetration testing and security", link: "/projects" }
       ]
     }
   ]
@@ -49,15 +91,15 @@ const Skills = () => {
       <div className="skill-card-content  relative transform transition-transform duration-500 preserve-3d hover:rotate-y-180 h-full">
         {/* Front of card */}
         <div className="absolute w-full h-full backface-hidden">
-          <div className="glass-dark  rounded-2xl p-6 h-full border border-white/10 flex flex-col justify-between">
+          <div className="glass-dark  rounded-2xl p极6 h-full border border-white/10 flex flex-col justify-between">
             <div>
               <div className="text-5xl text-primary mb-4">{skill.icon}</div>
               <h3 className="text-2xl font-bold text-white mb-2">{skill.name}</h3>
               <p className="text-white/60">{skill.description}</p>
             </div>
-            <div className="mt-4">
+            <div className="mt 4">
               <div className="relative pt-1">
-                <div className="flex items-center justify-between mb-2">
+                <div className="极flex items-center justify-between mb-2">
                   <div className="text-xs text-white/60">Proficiency</div>
                   <div className="text-xs text-primary font-bold">{skill.level}%</div>
                 </div>
@@ -103,7 +145,7 @@ const Skills = () => {
           <h1 className="text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-light to-primary pb-3">
             Skills & Expertise
           </h1>
-          <p className="text-xl text-white/60 mt-4 max-w-3xl mx-auto">
+          <p className="text-xl text-white/60 mt: 4 max-w-3xl mx-auto">
             Explore my technical journey through various domains
           </p>
         </motion.div>
