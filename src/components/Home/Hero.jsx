@@ -18,10 +18,10 @@ const Hero = () => {
             
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10"></div>
         <div className="relative z-20 w-full h-full flex flex-col items-center justify-center bg-black/80">
-          <h1 id='HomePageName' className='text-center lg:text-[200px] text-[100px] text-white/10 font-sans font-bold leading-[20vw]'>
-            Ashish Ranjan
+          <h1 id='HomePageName' className='text-center lg:text-[170px] text-[100px] text-white/10 font-sans font-bold leading-tighter'>
+            ASHISH RANJAN
           </h1>
-          <pre className='hidden lg:block text-4xl text-white/80 font-sans font-bold tracking-wider mt-4'>
+          <pre className='hidden lg:block text-4xl text-white/80 font-sans font-bold tracking-wider mt-'>
             Robotics Engineer  |  Web Developer  |  AI/ML Enthusiast
           </pre>
           <div className='block lg:hidden text-white text-center p-6 bg-black/70 rounded-lg shadow-lg'>
@@ -62,7 +62,7 @@ const Hero = () => {
 
           <button 
             onClick={scrollToAbout}
-            className="absolute bottom-10 text-white/60 hover:text-white text-4xl animate-bounce hover:bg-white/5 hover:scale-125 p-4 rounded-full transition-all duration-300"
+            className="absolute bottom-10 text-white/60 hover:text-white text-4xl animate-bounce hover:bg-white/5 hover:scale-125 p-4 mt-8 rounded-full transition-all duration-300"
           >
             <FaArrowDown />
           </button>

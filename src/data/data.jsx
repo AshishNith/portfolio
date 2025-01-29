@@ -43,13 +43,13 @@ export const achievements = [
   }
 ];
 
-
 export const socialLinks = [
     { icon: <FaGithub />, href: "https://github.com/AshishNith", label: "GitHub" },
     { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/fictech/", label: "LinkedIn" },
     { icon: <FaXTwitter />, href: "https://x.com/AshishR9992", label: "Twitter" },
     { icon: <FaInstagram />, href: "https://www.instagram.com/ig_ashish.ranjan/", label: "Instagram" },
 ];
+
 export const projects = [
   {
     title: "Roboweek 3.0 Website",
@@ -58,7 +58,7 @@ export const projects = [
     technologies: ["React", "Tailwind CSS", "JavaScript", "Responsive Design", "Git"],
     github: "https://github.com/AshishNith/Roboweek-3.0---Frontend",
     demo: "https://roboweek3.com/",
-    image: "src/assets/Skills/Roboweek.png",
+    image: "/assets/Skills/Roboweek.png",
     status: "In Progress",
     duration: "1 month",
     teamSize: 2
@@ -70,7 +70,7 @@ export const projects = [
     technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "REST API"],
     github: "https://github.com/AshishNith/The-Sapphire-Retreat",
     demo: "https://the-sapphire-retreat.vercel.app/",
-    image: "src/assets/Hotel.png",
+    image: "/assets/Hotel.png",
     status: "In Progress",
     duration: "-- -- --",
     teamSize: 3
@@ -82,18 +82,19 @@ export const projects = [
     technologies: ["React", "Markdown", "Tailwind CSS", "Responsive Design", "Git"],
     github: "https://github.com/AshishNith/RoboticsReactApp",
     demo: "https://robosoc-nith.vercel.app/",
-    image: "src/assets/Robosoc.png",
+    image: "/assets/Robosoc.png",
     status: "In Progress",
     duration: "2 weeks",
     teamSize: 1
-  }, {
+  },
+  {
     title: "Portfolio Website",
     description: "Developed my personal portfolio website to showcase my skills, projects, and achievements. Built using React and modern web technologies with a focus on clean design and smooth animations.",
     category: "Web",
     technologies: ["React", "Tailwind CSS", "Framer Motion", "Responsive Design", "Git"],
     github: "https://github.com/AshishNith/portfolio",
     demo: "https://ashishnith.vercel.app/",
-    image: "src/assets/Portfolio.png",
+    image: "/assets/Portfolio.png",
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -105,7 +106,7 @@ export const projects = [
     technologies: ["Arduino", "Python", "OpenCV", "Wireless Communication"],
     github: "https://github.com/ashishnith/Gesture-Controlled-Robot",
     demo: "https://gesture-bot-demo.com",
-    image: "src/assets/Gesture.jpeg",
+    image: "/assets/Gesture.jpeg",
     status: "Completed",
     duration: "3 months",
     teamSize: 3
@@ -117,7 +118,7 @@ export const projects = [
     technologies: ["ROS2", "Python", "Inverse Kinematics", "Mechatronics"],
     github: "https://github.com/ashishnith/Surgical-Robotic-Arm",
     demo: "",
-    image: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg",
+    image: "/assets/RoboticArm.jpeg",
     status: "In Progress",
     duration: "Ongoing",
     teamSize: 5
@@ -129,8 +130,7 @@ export const projects = [
     technologies: ["ROS2 Humble", "Python", "Joystick Integration", "TurtleSim", "Teleoperation"],
     github: "https://github.com/AshishNith/Joystick_to_Turtle_control",
     demo: "",
-        image: "src/assets/Turtle.png",
-
+    image: "/assets/Turtle.png",
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -142,8 +142,7 @@ export const projects = [
     technologies: ["ROS2", "Python", "Path Planning"],
     github: "https://github.com/ashishnith/Turtle_Follow",
     demo: "",
-            image: "src/assets/Turtle.png",
-
+    image: "/assets/Turtle.png",
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -155,7 +154,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     github: "https://github.com/AshishNith/Ranjan-s_Docs",
     demo: "https://ashishnith.github.io/Ranjan-s_Docs/",
-            image: "src/assets/Docs.png",
+    image: "/assets/Docs.png",
     status: "Completed",
     duration: "2 months",
     teamSize: 1
@@ -167,8 +166,7 @@ export const projects = [
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "CSS Animations"],
     github: "https://github.com/AshishNith/Boston-Dynamics_UI-clone",
     demo: "https://ashishnith.github.io/Boston-Dynamics_UI-clone/",
-            image: "src/assets/Boston.png",
-
+    image: "/assets/Boston.png",
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -180,7 +178,7 @@ export const projects = [
     technologies: ["Django", "Python", "PostgreSQL", "Bootstrap", "Authentication"],
     github: "https://github.com/AshishNith/TaskManager--Django",
     demo: "",
-            image: "src/assets/Task.png",
+            image: "../assets/Task.png",
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -192,7 +190,7 @@ export const projects = [
     technologies: ["Arduino", "C++", "Sensors"],
     github: "https://github.com/ashishnith/Line-Follower-Bot",
     demo: "",
-            image: "src/assets/Line.jpeg",
+            image: "../assets/Line.jpeg",
     status: "Completed",
     duration: "2 months",
     teamSize: 2
@@ -216,7 +214,7 @@ export const projects = [
     technologies: ["Arduino", "C++", "PID Control", "Sensors", "IMU"],
     github: "https://github.com/ashishnith/Drone-Flight-Controller",
     demo: "https://docs.google.com/document/d/1JEvM-cBXsihdNlWLUmdRNljJgKbOO4f0CUudsRtk4ak/edit?usp=sharing",
-            image: "src/assets/Drone.png",
+            image: "../assets/Drone.png",
     status: "Completed",
     duration: "5 months",
     teamSize: 3
@@ -228,7 +226,7 @@ export const projects = [
     technologies: ["JavaScript", "HTML", "CSS", "DOM Manipulation", "API Integration"],
     github: "https://github.com/AshishNith/JS_Projects",
     demo: "",
-            image: "src/assets/js.png",
+            image: "../assets/js.png",
     status: "Completed",
     duration: "3 months",
     teamSize: 1

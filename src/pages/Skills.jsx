@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState("Programming Languages")
-
   const techStacks = [
     {
       category: "Programming Languages",
@@ -86,20 +85,20 @@ const Skills = () => {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      className="group relative perspective h-[300px] "
+      className="group relative perspective h-[300px]"
     >
-      <div className="skill-card-content  relative transform transition-transform duration-500 preserve-3d hover:rotate-y-180 h-full">
+      <div className="skill-card-content relative transform transition-transform duration-500 preserve-3d hover:rotate-y-180 h-full">
         {/* Front of card */}
         <div className="absolute w-full h-full backface-hidden">
-          <div className="glass-dark  rounded-2xl p极6 h-full border border-white/10 flex flex-col justify-between">
+          <div className="glass-dark rounded-2xl p-6 h-full border border-white/10 flex flex-col justify-between">
             <div>
               <div className="text-5xl text-primary mb-4">{skill.icon}</div>
               <h3 className="text-2xl font-bold text-white mb-2">{skill.name}</h3>
               <p className="text-white/60">{skill.description}</p>
             </div>
-            <div className="mt 4">
+            <div className="mt-4">
               <div className="relative pt-1">
-                <div className="极flex items-center justify-between mb-2">
+                <div className="flex items-center justify-between mb-2">
                   <div className="text-xs text-white/60">Proficiency</div>
                   <div className="text-xs text-primary font-bold">{skill.level}%</div>
                 </div>
@@ -134,7 +133,7 @@ const Skills = () => {
   )
 
   return (
-    <section className="min-h-screen relative pt-24 pb-16">
+    <section className="min极h-screen relative pt-24 pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Floating Header */}
         <motion.div
