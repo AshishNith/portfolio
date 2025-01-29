@@ -58,7 +58,7 @@ export const projects = [
     technologies: ["React", "Tailwind CSS", "JavaScript", "Responsive Design", "Git"],
     github: "https://github.com/AshishNith/Roboweek-3.0---Frontend",
     demo: "https://roboweek3.com/",
-    image: "/assets/Skills/Roboweek.png",
+    image: "https://i.ibb.co/VWMTGyW3/Roboweek.png",
     status: "In Progress",
     duration: "1 month",
     teamSize: 2
@@ -70,7 +70,7 @@ export const projects = [
     technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "REST API"],
     github: "https://github.com/AshishNith/The-Sapphire-Retreat",
     demo: "https://the-sapphire-retreat.vercel.app/",
-    image: "/assets/Hotel.png",
+    image: "https://i.ibb.co/fdNVk5GH/Hotel.png",
     status: "In Progress",
     duration: "-- -- --",
     teamSize: 3
@@ -82,7 +82,7 @@ export const projects = [
     technologies: ["React", "Markdown", "Tailwind CSS", "Responsive Design", "Git"],
     github: "https://github.com/AshishNith/RoboticsReactApp",
     demo: "https://robosoc-nith.vercel.app/",
-    image: "/assets/Robosoc.png",
+    image: "https://i.ibb.co/27d5dFp8/Robosoc.png",
     status: "In Progress",
     duration: "2 weeks",
     teamSize: 1
@@ -93,8 +93,8 @@ export const projects = [
     category: "Web",
     technologies: ["React", "Tailwind CSS", "Framer Motion", "Responsive Design", "Git"],
     github: "https://github.com/AshishNith/portfolio",
-    demo: "https://ashishnith.vercel.app/",
-    image: "/assets/Portfolio.png",
+    demo: "https://portfolio-ashish9992.vercel.app/",
+    image: "https://i.ibb.co/Z6TRJyyG/Portfolio.png",
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -106,7 +106,7 @@ export const projects = [
     technologies: ["Arduino", "Python", "OpenCV", "Wireless Communication"],
     github: "https://github.com/ashishnith/Gesture-Controlled-Robot",
     demo: "https://gesture-bot-demo.com",
-    image: "/assets/Gesture.jpeg",
+    image: "https://i.ibb.co/rft5dJ68/Gesture.jpg",
     status: "Completed",
     duration: "3 months",
     teamSize: 3
@@ -118,7 +118,7 @@ export const projects = [
     technologies: ["ROS2", "Python", "Inverse Kinematics", "Mechatronics"],
     github: "https://github.com/ashishnith/Surgical-Robotic-Arm",
     demo: "",
-    image: "/assets/RoboticArm.jpeg",
+    image: "https://i.ibb.co/chn337Jk/Robotic-Arm.jpg",
     status: "In Progress",
     duration: "Ongoing",
     teamSize: 5
@@ -130,7 +130,7 @@ export const projects = [
     technologies: ["ROS2 Humble", "Python", "Joystick Integration", "TurtleSim", "Teleoperation"],
     github: "https://github.com/AshishNith/Joystick_to_Turtle_control",
     demo: "",
-    image: "/assets/Turtle.png",
+    image: "https://i.ibb.co/PzrNBQYQ/Turtle.png",
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -142,7 +142,7 @@ export const projects = [
     technologies: ["ROS2", "Python", "Path Planning"],
     github: "https://github.com/ashishnith/Turtle_Follow",
     demo: "",
-    image: "/assets/Turtle.png",
+    image: "https://i.ibb.co/PzrNBQYQ/Turtle.png",
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -154,7 +154,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     github: "https://github.com/AshishNith/Ranjan-s_Docs",
     demo: "https://ashishnith.github.io/Ranjan-s_Docs/",
-    image: "/assets/Docs.png",
+    image: "https://i.ibb.co/qQyd9T6/Docs.png",
     status: "Completed",
     duration: "2 months",
     teamSize: 1
@@ -166,7 +166,7 @@ export const projects = [
     technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "CSS Animations"],
     github: "https://github.com/AshishNith/Boston-Dynamics_UI-clone",
     demo: "https://ashishnith.github.io/Boston-Dynamics_UI-clone/",
-    image: "/assets/Boston.png",
+    image: "https://i.ibb.co/SDqc9gYZ/Boston.png",
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -178,7 +178,7 @@ export const projects = [
     technologies: ["Django", "Python", "PostgreSQL", "Bootstrap", "Authentication"],
     github: "https://github.com/AshishNith/TaskManager--Django",
     demo: "",
-            image: "../assets/Task.png",
+    image: "https://i.ibb.co/Z1fP4vqX/Task.png",
     status: "Completed",
     duration: "1 month",
     teamSize: 1
@@ -190,7 +190,7 @@ export const projects = [
     technologies: ["Arduino", "C++", "Sensors"],
     github: "https://github.com/ashishnith/Line-Follower-Bot",
     demo: "",
-            image: "../assets/Line.jpeg",
+    image: "https://i.ibb.co/ZzVK6396/Line.jpg",
     status: "Completed",
     duration: "2 months",
     teamSize: 2
@@ -214,7 +214,7 @@ export const projects = [
     technologies: ["Arduino", "C++", "PID Control", "Sensors", "IMU"],
     github: "https://github.com/ashishnith/Drone-Flight-Controller",
     demo: "https://docs.google.com/document/d/1JEvM-cBXsihdNlWLUmdRNljJgKbOO4f0CUudsRtk4ak/edit?usp=sharing",
-            image: "../assets/Drone.png",
+            image: "https://i.ibb.co/RkNTgDt6/Drone.png",
     status: "Completed",
     duration: "5 months",
     teamSize: 3
@@ -226,7 +226,7 @@ export const projects = [
     technologies: ["JavaScript", "HTML", "CSS", "DOM Manipulation", "API Integration"],
     github: "https://github.com/AshishNith/JS_Projects",
     demo: "",
-            image: "../assets/js.png",
+            image: "https://i.ibb.co/spXs0wQt/js.png",
     status: "Completed",
     duration: "3 months",
     teamSize: 1

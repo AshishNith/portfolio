@@ -15,15 +15,20 @@ const Projects = () => {
 
   return (
     <>
-      {/* <FloatingShape /> */}
-      <section className="  min-h-screen relative pt-24 pb-16">
+      <section className="min-h-screen relative pt-24 pb-16 overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute -top-32 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+          <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+        </div>
+
         {/* Header Section */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-12"
+            className="text-center mb-16"
           >
             <h1 className="lg:text-6xl text-4xl font-bold mb-3">
               <span className="bg-gradient-to-r from-primary via-primary-light to-primary bg-clip-text text-transparent">
@@ -36,7 +41,7 @@ const Projects = () => {
           </motion.div>
 
           {/* Filter Section */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-3 mb-16">
             {categories.map((category, index) => (
               <motion.button
                 key={category}
@@ -44,10 +49,10 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-full backdrop-blur-md transition-all duration-300 flex items-center gap-2
+                className={`px-6 py-3 rounded-full backdrop-blur-md transition-all duration-300 flex items-center gap-2
                   ${selectedCategory === category 
-                    ? 'bg-primary/20 text-primary border border-primary/50' 
-                    : 'bg-white/5 text-white/60 border border-white/10 hover:bg-white/10'
+                    ? 'bg-primary/20 text-primary border border-primary/50 shadow-lg shadow-primary/20' 
+                    : 'bg-white/5 text-white/60 border border-white/10 hover:bg-white/10 hover:shadow-lg'
                   }`}
               >
                 <FaFilter className={`text-sm ${selectedCategory === category ? 'rotate-180' : ''} transition-transform`} />
@@ -56,14 +61,15 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Projects Grid - Masonry Layout */}
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
             {filteredProjects.map((project, index) => (
               <motion.div
                 key={project.title}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="break-inside-avoid"
               >
                 <ProjectCard project={project} />
               </motion.div>
@@ -83,6 +89,8 @@ const Projects = () => {
             </motion.div>
           )}
         </div>
+
+
       </section>
     </>
   )

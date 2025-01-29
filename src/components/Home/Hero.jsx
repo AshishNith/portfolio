@@ -18,7 +18,7 @@ const Hero = () => {
             
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10"></div>
         <div className="relative z-20 w-full h-full flex flex-col items-center justify-center bg-black/80">
-          <h1 id='HomePageName' className='text-center lg:text-[170px] text-[100px] text-white/10 font-sans font-bold leading-tighter'>
+          <h1 id='HomePageName' className='text-center lg:text-[170px] text-[80px] text-white/10 font-sans font-bold leading-tight'>
             ASHISH RANJAN
           </h1>
           <pre className='hidden lg:block text-4xl text-white/80 font-sans font-bold tracking-wider mt-'>
