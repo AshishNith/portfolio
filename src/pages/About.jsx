@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { experiences, education, achievements } from '../data/data'
-import profile from '../assets/Profile.jpeg'
 
 const About = () => {
   return (
@@ -43,9 +42,9 @@ const About = () => {
                 <div className="relative w-72 h-72 mx-auto rounded-full p-2">
                   <div className="absolute inset-0 bg-black rounded-full"></div>
                   <img
-                    src={profile}
+                    src='https://i.ibb.co/Q7qrsT6w/7eb1096a-b393-4c2a-8255-b435fe89896b.jpg'
                     alt="Ashish Ranjan"
-                    className="relative rounded-full w-full h-full object-cover transform transition duration-500 group-hover:scale-105"
+                    className="relative rounded-full w-full h-full object-cover object-top transform transition duration-500 group-hover:scale-105"
                   />
                   
                   {/* Animated overlay */}
