@@ -1,17 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
+import gsap from 'gsap'
 
 const MouseFollower = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 })
-  const [isMoving, setIsMoving] = useState(false)
   const [isPointer, setIsPointer] = useState(false)
+  const dotRef = useRef(null)
+  const circleRef = useRef(null)
 
   useEffect(() => {
     let timeoutId
 
     const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY })
-      setIsMoving(true)
-      
       // Check if cursor is over a clickable element
       const target = e.target
       setIsPointer(
@@ -20,9 +18,22 @@ const MouseFollower = () => {
         target.tagName.toLowerCase() === 'a'
       )
 
-      // Reset the moving state after mouse stops
-      clearTimeout(timeoutId)
-      timeoutId = setTimeout(() => setIsMoving(false), 100)
+      // Animate cursor elements
+      gsap.to(dotRef.current, {
+        x: e.clientX - 3,
+        y: e.clientY - 3,
+        duration: 0.2,
+        ease: "power2.out",
+        scale: isPointer ? 1.5 : 1
+      })
+
+      gsap.to(circleRef.current, {
+        x: e.clientX - 16,
+        y: e.clientY - 16,
+        duration: 0.3,
+        ease: "power2.out",
+        scale: isPointer ? 1.5 : 1
+      })
     }
 
     window.addEventListener('mousemove', handleMouseMove)
@@ -31,32 +42,20 @@ const MouseFollower = () => {
       window.removeEventListener('mousemove', handleMouseMove)
       clearTimeout(timeoutId)
     }
-  }, [])
+  }, [isPointer])
 
   return (
     <>
-      {/* Main dot cursor */}
       <div
+        ref={dotRef}
         className="fixed pointer-events-none z-[9999] mix-blend-difference
           h-1.5 w-1.5 rounded-full bg-white"
-        style={{
-          left: position.x - 3,
-          top: position.y - 3,
-          transform: `scale(${isMoving ? 0.8 : 1}) ${isPointer ? 'scale(1.5)' : ''}`,
-        }}
       />
 
-      {/* Circle outline */}
       <div
+        ref={circleRef}
         className="fixed pointer-events-none z-[9998] mix-blend-difference
-          h-8 w-8 rounded-full border border-white
-          transition-all duration-300 ease-out"
-        style={{
-          left: position.x - 16,
-          top: position.y - 16,
-          transform: `scale(${isMoving ? 1.2 : 1}) ${isPointer ? 'scale(1.5)' : ''}`,
-          opacity: 0.8,
-        }}
+          h-8 w-8 rounded-full border border-white opacity-80"
       />
     </>
   )

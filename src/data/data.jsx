@@ -59,7 +59,7 @@ export const projects = [
     github: "https://github.com/AshishNith/Roboweek-3.0---Frontend",
     demo: "https://roboweek3.com/",
     image: "https://i.ibb.co/VWMTGyW3/Roboweek.png",
-    status: "In Progress",
+    status: "Completed",
     duration: "1 month",
     teamSize: 2
   },
@@ -71,7 +71,7 @@ export const projects = [
     github: "https://github.com/AshishNith/The-Sapphire-Retreat",
     demo: "https://the-sapphire-retreat.vercel.app/",
     image: "https://i.ibb.co/fdNVk5GH/Hotel.png",
-    status: "In Progress",
+    status: "Completed",
     duration: "-- -- --",
     teamSize: 3
   },

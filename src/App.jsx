@@ -17,7 +17,7 @@ const App = () => {
     <Router>
       <div className="min-h-screen bg-black flex flex-col">
         <Navbar />
-      <FloatingShape />
+      {/* <FloatingShape /> */}
 
         <MouseFollower />
         <ChatBot />

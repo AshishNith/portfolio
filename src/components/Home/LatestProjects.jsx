@@ -17,7 +17,7 @@ const LatestProjects = () => {
               transition={{ duration: 0.8 }}
               className="text-center mb-16"
             >
-              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-light to-primary">
+              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6D28D9] via-[#8B5CF6] to-[#EC4899]">
                 Latest Projects
               </h2>
               <p className="text-white/60 mt-4">
@@ -40,7 +40,7 @@ const LatestProjects = () => {
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-black/20 group-hover:from-black/80 transition-all duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-white/5 group-hover:from-white/15 transition-all duration-300" />
                   </div>
 
                   <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
@@ -52,7 +52,7 @@ const LatestProjects = () => {
                       {project.technologies.map((tech, i) => (
                         <span 
                           key={i}
-                          className="px-2 py-1 text-xs rounded-full bg-white/10 text-white/80"
+                          className="px-2 py-1 text-xs rounded-full bg-white/20 text-white/90"
                         >
                           {tech}
                         </span>
@@ -69,7 +69,7 @@ const LatestProjects = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-center"
             >
-              <Link to="/projects" className="inline-block px-6 py-3 bg-gradient-to-r from-primary/20 to-primary-light/20 rounded-full backdrop-blur-lg border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer group">
+              <Link to="/projects" className="inline-block px-6 py-3 bg-gradient-to-r from-white/10 to-white/5 rounded-full backdrop-blur-lg border border-white/10 hover:border-[#6D28D9]/50 transition-all duration-300 cursor-pointer group">
                 <span className="text-white/80 group-hover:text-white transition-colors">
                   View More Projects <i className="ri-arrow-right-line ml-2 inline-block group-hover:translate-x-1 transition-transform"></i>
                 </span>

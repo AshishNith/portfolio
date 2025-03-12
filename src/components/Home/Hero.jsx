@@ -16,7 +16,7 @@ const Hero = () => {
   return (
            <div id='HomePage' className='w-screen h-screen relative border-b-2 border-gray-700'>
             
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent z-10"></div>
         <div className="relative z-20 w-full h-full flex flex-col items-center justify-center bg-black/80">
           <h1 id='HomePageName' className='text-center lg:text-[170px] text-[80px] text-white/10 font-sans font-bold leading-tight'>
             ASHISH RANJAN
@@ -24,7 +24,7 @@ const Hero = () => {
           <pre className='hidden lg:block text-4xl text-white/80 font-sans font-bold tracking-wider mt-'>
             Robotics Engineer  |  Web Developer  |  AI/ML Enthusiast
           </pre>
-          <div className='block lg:hidden text-white text-center p-6 bg-black/70 rounded-lg shadow-lg'>
+          <div className='block lg:hidden text-white text-center p-6 bg-white/10 backdrop-blur-md rounded-lg shadow-lg'>
             <div className='border-t-2 border-white opacity-30 w-1/2 mx-auto my-4'></div>
             <h2 className='text-xl font-bold mb-2'>Robotics Engineer</h2>
             <h2 className='text-xl font-bold mb-2'>Web Developer</h2>
@@ -48,13 +48,13 @@ const Hero = () => {
           <div className="mt-12 flex gap-6">
             <button
               onClick={downloadCV}
-              className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-primary-light text-white rounded-lg shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
+              className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#6D28D9] to-[#8B5CF6] text-white rounded-lg shadow-lg hover:shadow-[#6D28D9]/50 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
             >
               <FaDownload className="animate-bounce" /> Download CV
             </button>
             <Link
               to="/projects"
-              className="flex items-center gap-2 px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 text-white rounded-lg shadow-lg hover:shadow-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
+              className="flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 text-white rounded-lg shadow-lg hover:shadow-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
             >
               My Works <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Link>

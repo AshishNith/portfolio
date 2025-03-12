@@ -93,3 +93,19 @@
         opacity: 0.3;
     }
 }
+
+.sphere {
+  @apply absolute rounded-full blur-3xl;
+  background: radial-gradient(circle at 30% 30%, rgba(109, 40, 217, 0.7), rgba(139, 92, 246, 0.3));
+  pointer-events: none;
+}
+
+.sphere-2 {
+  /* ... existing code ... */
+  background: radial-gradient(circle at 30% 30%, rgba(236, 72, 153, 0.7), rgba(139, 92, 246, 0.3));
+}
+
+.sphere-3 {
+  /* ... existing code ... */
+  background: radial-gradient(circle at 30% 30%, rgba(91, 33, 182, 0.7), rgba(76, 29, 149, 0.3));
+}

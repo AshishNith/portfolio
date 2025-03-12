@@ -43,81 +43,102 @@ const ProjectCard = ({ project }) => {
 
   return (
     <>
-       <div 
-        className="group bg-white/5 backdrop-blur-sm relative rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-primary/50 transition-all duration-300"
-        onClick={() => setShowModal(true)}
+      <motion.div
+        whileHover={{ y: -5 }}
+        className="relative group break-inside-avoid"
       >
-        {/* Image Section */}
-        <div className="relative aspect-[4/3] backdrop-blur-sm p-3 overflow-hidden">
-          <img 
-            src={project.image} 
-            alt={project.title}
-            className="w-full h-full rounded-lg object-cover transition-transform duration-700 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
-        </div>
+        {/* Main Card */}
+        <div 
+          onClick={() => setShowModal(true)}
+          className="relative overflow-hidden rounded-2xl cursor-pointer 
+            bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md 
+            border border-white/10 hover:border-primary/30 transition-all duration-300"
+        >
+          {/* Image Container */}
+          <div className="relative aspect-[4/3] overflow-hidden">
+            <img 
+              src={project.image} 
+              alt={project.title}
+              className="w-full h-full object-cover transition-all duration-500
+                group-hover:scale-110 group-hover:blur-[8px]"
+            />
+            
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black 
+              opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
 
-        {/* Content Section */}
-        <div className="p-5">
-          {/* Title and Status */}
-          <div className="flex items-center justify-between mb-3">
-            <h3 className="text-xl font-semibold text-white">
-              {project.title}
-            </h3>
-            <span className={`px-2 py-1 text-xs rounded-full ${
-              project.status === 'Completed' 
-                ? 'bg-green-500/20 text-green-500' 
-                : 'bg-yellow-500/20 text-yellow-500'
-            }`}>
-              {project.status}
-            </span>
-          </div>
-
-          {/* Description */}
-          <p className="text-white/60 text-sm mb极4 line-clamp-2">
-            {project.description}
-          </p>
-
-          {/* Technologies */}
-          <div className="flex flex-wrap gap-2 mb-4">
-            {project.technologies.slice(0, 3).map((tech, i) => (
-              <span 
-                key={i}
-                className="px-2 py-1 text-xs rounded-full bg-white/5 text-white/80 border border-white/10 hover:bg-white/10 transition-all duration-300"
+            {/* Status Badge */}
+            <div className="absolute top-4 right-4">
+              <span className={`px-3 py-1 rounded-full text-xs font-medium backdrop-blur-md
+                ${project.status === 'Completed' 
+                  ? 'bg-green-500/20 text-green-400' 
+                  : 'bg-yellow-500/20 text-yellow-400'}`}
               >
-                {tech}
+                {project.status}
               </span>
-            ))}
+            </div>
           </div>
 
-          {/* Action Buttons */}
-          <div className="flex gap-3">
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-white极5 hover:bg-white/10 text-white/80 border border-white/10 hover:border-primary/50 transition-all duration-300"
-            >
-              <FaGithub className="text-sm" />
-              <span className="text-sm">Code</span>
-            </a>
-            {project.demo && (
-              <a
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-                className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-primary/20 hover:bg-primary/30 text-white border border-primary/50 transition-all duration-300"
-              >
-                <FaExternalLinkAlt className="text-sm" />
-                <span className="text-sm">Demo</span>
-              </a>
-            )}
+          {/* Content */}
+          <div className="absolute inset-0 p-6 flex flex-col justify-end">
+            <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+              <h3 className="text-2xl font-bold text-white mb-2">
+                {project.title}
+              </h3>
+              
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.slice(0, 3).map((tech, i) => (
+                  <span 
+                    key={i}
+                    className="px-2 py-1 text-xs rounded-md bg-white/10 backdrop-blur-sm 
+                      text-white/90 border border-white/10"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* Description */}
+              <p className="text-white/80 text-sm mb-4 line-clamp-2 opacity-0 
+                group-hover:opacity-100 transition-opacity duration-500">
+                {project.description}
+              </p>
+
+              {/* Action Buttons */}
+              <div className="flex gap-3 opacity-0 group-hover:opacity-100 
+                transition-opacity duration-500">
+                <motion.a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2 
+                    rounded-lg bg-white/10 hover:bg-white/20 backdrop-blur-sm 
+                    text-white transition-all duration-300"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <FaGithub /> Code
+                </motion.a>
+                {project.demo && (
+                  <motion.a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 
+                      rounded-lg bg-primary/20 hover:bg-primary/30 backdrop-blur-sm 
+                      text-white transition-all duration-300"
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <FaExternalLinkAlt /> Demo
+                  </motion.a>
+                )}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
+      </motion.div>
 
       {/* Modal */}
       <AnimatePresence>
@@ -253,4 +274,4 @@ const ProjectCard = ({ project }) => {
   )
 }
 
-export default ProjectCard 
+export default ProjectCard

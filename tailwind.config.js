@@ -12,11 +12,11 @@ export default {
           dark: 'rgba(0, 0, 0, 0.3)',
           light: 'rgba(255, 255, 255, 0.2)',
         },
-        primary: {
-          DEFAULT: '#4F46E5',
-          dark: '#4338CA',
-          light: '#818CF8'
-        },
+        primary: '#6D28D9',
+        'primary-light': '#8B5CF6',
+        'primary-dark': '#5B21B6',
+        'primary-darker': '#4C1D95',
+        accent: '#EC4899',
         dark: {
           DEFAULT: '#0F172A',
           light: '#1E293B',
