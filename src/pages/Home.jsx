@@ -4,9 +4,6 @@ import React from 'react'
 import AboutSection from '../components/Home/AboutSection'
 import Hero from '../components/Home/Hero'
 import LatestProjects from '../components/Home/LatestProjects'
-import About from './About'
-import Projects from './Projects'
-import Skills from './Skills'
 
 const Home = () => {
 
@@ -15,15 +12,15 @@ const Home = () => {
       
       <Hero />
 
-      {/* <AboutSection /> */}
+      <AboutSection />
 
-      <Projects />
+      {/* <Projects /> */}
 
-      <Skills />
+      {/* <Skills /> */}
 
-      <About />
+      {/* <About /> */}
       
-      {/* <LatestProjects /> */}
+      <LatestProjects />
     </>
   )
 }

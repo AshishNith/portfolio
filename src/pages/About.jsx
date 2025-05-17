@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { experiences, education, achievements } from '../data/data'
 import { FaGraduationCap, FaBriefcase, FaTrophy } from 'react-icons/fa'
+import profileImage from "../assets/profileImage.jpeg"
 
 const About = () => {
   return (
@@ -31,7 +32,8 @@ const About = () => {
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-primary to-purple-600 blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
               <div className="relative h-full rounded-3xl overflow-hidden border-2 border-white/10 backdrop-blur-sm">
                 <img
-                  src="https://i.ibb.co/Q7qrsT6w/7eb1096a-b393-4c2a-8255-b435fe89896b.jpg"
+                  // src="https://i.ibb.co/Q7qrsT6w/7eb1096a-b393-4c2a-8255-b435fe89896b.jpg"
+                  src={profileImage}
                   alt="Ashish Ranjan"
                   className="w-full h-full object-cover"
                 />
@@ -45,11 +47,11 @@ const About = () => {
                 animate={{ y: 0, opacity: 1 }}
                 className="space-y-6"
               >
-                <h1 className="text-5xl md:text-6xl font-bold">
+                <h1 className="text-5xl md:text-6xl text-white font-bold">
                   About <span className="text-primary">Me</span>
                 </h1>
                 <p className="text-lg text-white/80 leading-relaxed">
-                  // ...existing bio text...
+                I am currently undertaking a B.Tech in Mechanical Engineering at the esteemed National Institute of Technology Hamirpur, where I am immersing myself in the world of innovation. With a robust proficiency in a diverse array of programming languages and frameworks, my expertise includes Python, AI-ML, ROS, Arduino, as well as Cybersecurity and Ethical Hacking. I'm passionate about leveraging these skills to push the boundaries of technology and create impactful solutions.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   {["ROS2", "React", "Python", "AI/ML", "Web Development", "Robotics"].map((skill) => (

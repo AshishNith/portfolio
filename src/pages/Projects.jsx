@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import ProjectCard from '../components/ProjectCard'
 import { motion, LayoutGroup } from 'framer-motion'
 import { projects } from '../data/data'
-import { FaFilter } from 'react-icons/fa'
-import { BiCategory } from 'react-icons/bi'
+// import { FaFilter } from 'react-icons/fa'
+// import { BiCategory } from 'react-icons/bi'
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All')
@@ -76,7 +76,7 @@ const Projects = () => {
           <LayoutGroup>
             <motion.div 
               layout
-              className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-auto"
             >
               {filteredProjects.map((project) => (
                 <motion.div
@@ -86,6 +86,7 @@ const Projects = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 20 }}
                   transition={{ duration: 0.4 }}
+                  className="rounded-xl overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10 hover:border-primary/50 transition-all duration-300"
                 >
                   <ProjectCard project={project} />
                 </motion.div>
