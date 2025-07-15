@@ -4,19 +4,23 @@ import React from 'react'
 import AboutSection from '../components/Home/AboutSection'
 import Hero from '../components/Home/Hero'
 import LatestProjects from '../components/Home/LatestProjects'
-
+import About from './About'
+import Skills from './Skills'
+  
 const Home = () => {
 
   return (
     <>
       
       <Hero />
+{/* 
+      <AboutSection /> */}
 
-      <AboutSection />
+      <About />
 
       {/* <Projects /> */}
 
-      {/* <Skills /> */}
+      <Skills />
 
       {/* <About /> */}
       

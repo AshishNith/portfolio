@@ -51,8 +51,13 @@ const About = () => {
                   About <span className="text-primary">Me</span>
                 </h1>
                 <p className="text-lg text-white/80 leading-relaxed">
-                I am currently undertaking a B.Tech in Mechanical Engineering at the esteemed National Institute of Technology Hamirpur, where I am immersing myself in the world of innovation. With a robust proficiency in a diverse array of programming languages and frameworks, my expertise includes Python, AI-ML, ROS, Arduino, as well as Cybersecurity and Ethical Hacking. I'm passionate about leveraging these skills to push the boundaries of technology and create impactful solutions.
-                </p>
+                I’m currently pursuing a B.Tech in Mechanical Engineering at the National Institute of Technology, Hamirpur, where I actively explore the frontiers of innovation and intelligent systems.
+
+I'm the founder of  <a className='text-blue-100 font-bold' href="https://goran.in"> GoRan AI </a>, an emerging AI agency focused on building cutting-edge digital experiences. My technical expertise includes Python, AI/ML, ROS, Arduino, and full-stack web development.
+
+Deeply interested in robotics, I love blending hardware and software to bring ideas to life — from autonomous systems to smart assistants.
+
+My mission is to combine engineering fundamentals with modern tech to build impactful, real-world solutions.                </p>
                 <div className="flex flex-wrap gap-3">
                   {["ROS2", "React", "Python", "AI/ML", "Web Development", "Robotics"].map((skill) => (
                     <motion.span
